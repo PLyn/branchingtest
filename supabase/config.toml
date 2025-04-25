@@ -9,7 +9,7 @@ project_id = "oxibpiemxopwgmncpxwa"
 
 # The config specific to production
 
-[remotes.production]
+[remotes.main]
 project_id = 'ojmkgekqrsikhhesrnuw'
 
 
