@@ -19,7 +19,7 @@ enabled = true
 
 host = "your-settings-for-all-preview-databases-and-development"
 
-pass = "encrypted:XXXXXXXXX-password"
+pass = "mypassword"
 
 [api]
 enabled = true
