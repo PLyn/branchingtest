@@ -16,10 +16,13 @@ project_id = 'ojmkgekqrsikhhesrnuw'
 [auth.email.smtp]
 
 enabled = true
+host = "smtp.resend.com"
+port = 465
+user = "resend"
+pass = "asfgasdeqwr9801237423"
+admin_email = "bot@updates.test.aitest"
+sender_name = "test"
 
-host = "your-settings-for-all-preview-databases-and-development"
-
-pass = "mypassword"
 
 [api]
 enabled = true
