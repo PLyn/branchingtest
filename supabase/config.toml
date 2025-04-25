@@ -17,7 +17,7 @@ project_id = 'ojmkgekqrsikhhesrnuw'
 host = "smtp.resend.com"
 port = 465
 user = "resend"
-pass = "asfgasdeqwr9801237423"
+pass = "password"
 admin_email = "bot@updates.test.aitest"
 sender_name = "test"
 
