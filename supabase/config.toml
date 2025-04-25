@@ -2,11 +2,24 @@
 # working directory name when running `supabase init`.
 project_id = "branchingtest"
 
-[remotes.main]
-project_id = "ojmkgekqrsikhhesrnuw"
-
 [remotes.dev]
 project_id = "oxibpiemxopwgmncpxwa"
+
+
+
+# The config specific to production
+
+[remotes.production]
+project_id = 'ojmkgekqrsikhhesrnuw'
+
+
+[auth.email.smtp]
+
+enabled = true
+
+host = "your-settings-for-all-preview-databases-and-development"
+
+pass = "encrypted:XXXXXXXXX-password"
 
 [api]
 enabled = true
