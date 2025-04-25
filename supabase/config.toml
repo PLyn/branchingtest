@@ -2,11 +2,27 @@
 # working directory name when running `supabase init`.
 project_id = "branchingtest"
 
-[remotes.main]
-project_id = "ojmkgekqrsikhhesrnuw"
-
 [remotes.dev]
-project_id = "oxibpiemxopwgmncpxwa"
+project_id = "gayrhmlmrnsgspwnkonz"
+
+
+
+# The config specific to production
+
+[remotes.main]
+project_id = 'ojmkgekqrsikhhesrnuw'
+
+
+[auth.email.smtp]
+
+enabled = true
+host = "smtp.resend.com"
+port = 465
+user = "resend"
+pass = "asfgasdeqwr9801237423"
+admin_email = "bot@updates.test.aitest"
+sender_name = "test"
+
 
 [api]
 enabled = true
