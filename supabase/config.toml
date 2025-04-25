@@ -17,7 +17,7 @@ project_id = 'ojmkgekqrsikhhesrnuw'
 host = "smtp.resend.com"
 port = 465
 user = "resend"
-pass = "passworasd123"
+pass = "env(SUPABASE_AUTH_EXTERNAL_GITHUB_SECRET)"
 admin_email = "bot@updates.test.aitest"
 sender_name = "test"
 
