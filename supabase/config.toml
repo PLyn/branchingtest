@@ -14,8 +14,6 @@ project_id = 'ojmkgekqrsikhhesrnuw'
 
 
 [auth.email.smtp]
-
-enabled = true
 host = "smtp.resend.com"
 port = 465
 user = "resend"
