@@ -1,12 +1,12 @@
 # A string used to distinguish different Supabase projects on the same host. Defaults to the
 # working directory name when running `supabase init`.
-project_id = "nextjs"
+project_id = "branchingtest"
 
 [remotes.main]
-project_id = "kqnbwzdoumwurueopkrd"
+project_id = "ojmkgekqrsikhhesrnuw"
 
 [remotes.dev]
-project_id = "pvmemqkrrvebyjwruoky"
+project_id = "oxibpiemxopwgmncpxwa"
 
 [api]
 enabled = true
@@ -104,15 +104,15 @@ objects_path = "./images"
 enabled = true
 # The base URL of your website. Used as an allow-list for redirects and for constructing URLs used
 # in emails.
-site_url = "https://supplyco.vercel.app"
+site_url = "https://test.vercel.app"
 additional_redirect_urls = [
     "http://127.0.0.1:3000/**",
     "https://127.0.0.1:3000/**",
     "http://localhost:3000/**",
     "https://localhost:3000/**",
-    "https://supplyco.vercel.app/**",
-    "https://supplyco-webapp-*-banyan.vercel.app/**",
-    "https://product.supplyco.ai/**",
+    "https://test.vercel.app/**",
+    "https://test-webapp-*-banyan.vercel.app/**",
+    "https://product.test.ai/**",
 ] # A list of *exact* URLs that auth providers are permitted to redirect to post authentication.
 # How long tokens are valid for, in seconds. Defaults to 3600 (1 hour), maximum 604,800 (1 week).
 jwt_expiry = 3600
@@ -150,8 +150,8 @@ host = "smtp.resend.com"
 port = 465
 user = "resend"
 pass = "env(RESEND_API_KEY)"
-admin_email = "bot@updates.supplyco.ai"
-sender_name = "SupplyCo"
+admin_email = "bot@updates.test.ai"
+sender_name = "test"
 
 [auth.email.template.magic_link]
 subject = "Your magic link"
