@@ -91,7 +91,6 @@ file_size_limit = "50MiB"
 enabled = true
 
 [storage.buckets]
-name = "scout-assets"
 
 # Uncomment to configure local storage buckets
 [storage.buckets.images]
