@@ -30,7 +30,7 @@ sender_name = "maintest"
 host = "smtp.resend.com"
 port = 465
 user = "resend"
-pass = "asfgasdsdfdsfdsf423"
+pass = "env(SUPABASE_AUTH_EXTERNAL_GITHUB_SECRET)"
 admin_email = "testing@main.test.ai"
 sender_name = "testing"
 
