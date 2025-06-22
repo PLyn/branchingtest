@@ -16,8 +16,8 @@ host = "smtp.resend.com"
 port = 465
 user = "resend"
 pass = "fcsdfews123123123"
-admin_email = "test@updates.at.test"
-sender_name = "test"
+admin_email = "preview@updates.at.test"
+sender_name = "preview"
 
 # Sets SMTP config for production branch main
 [remotes.main.auth.email.smtp]
