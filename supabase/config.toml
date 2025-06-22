@@ -25,6 +25,15 @@ pass = "asfgasdsdfdsfdsf423"
 admin_email = "main@main.test.ai"
 sender_name = "maintest"
 
+
+[remotes.testing.auth.email.smtp]
+host = "smtp.resend.com"
+port = 465
+user = "resend"
+pass = "asfgasdsdfdsfdsf423"
+admin_email = "testing@main.test.ai"
+sender_name = "testing"
+
 [api]
 enabled = true
 # Port to use for the API URL.
