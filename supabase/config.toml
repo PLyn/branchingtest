@@ -22,7 +22,7 @@ host = "smtp.resend.com"
 port = 465
 user = "resend"
 pass = "asfgasdsdfdsfdsf423"
-admin_email = "bot@updates.test.ai"
+admin_email = "main@main.test.ai"
 sender_name = "maintest"
 
 [api]
