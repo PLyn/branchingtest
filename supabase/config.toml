@@ -6,9 +6,11 @@ project_id = "branchingtest"
 [remotes.main]
 project_id = 'ulrcmldsytnhoxjjcwgk'
 
+# The config specific to the remote branch called "testing"
 [remotes.testing]
 project_id = "cantgglgtvktlmfkhxoq"
 
+# Applies to all preview branches that isn't main or testing
 [auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
@@ -17,6 +19,7 @@ pass = "fcsdfews123123123"
 admin_email = "test@updates.at.test"
 sender_name = "test"
 
+# Sets SMTP config for production branch main
 [remotes.main.auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
@@ -25,7 +28,7 @@ pass = "asfgasdsdfdsfdsf423"
 admin_email = "main@main.test.ai"
 sender_name = "maintest"
 
-
+# Sets SMTP config for remote branch testing
 [remotes.testing.auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
