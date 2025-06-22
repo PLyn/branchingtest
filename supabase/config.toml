@@ -1,5 +1,4 @@
-# A string used to distinguish different Supabase projects on the same host. Defaults to the
-# working directory name when running `supabase init`.
+# Defaults to the working directory name when running `supabase init`.
 project_id = "branchingtest"
 
 # The config specific to production
@@ -25,8 +24,8 @@ host = "smtp.resend.com"
 port = 465
 user = "resend"
 pass = "asfgasdsdfdsfdsf423"
-admin_email = "main@main.test.ai"
-sender_name = "maintest"
+admin_email = "mymainproject@main.test.ai"
+sender_name = "mainproject"
 
 # Sets SMTP config for remote branch testing
 [remotes.testing.auth.email.smtp]
