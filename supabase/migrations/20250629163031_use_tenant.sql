@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS public.user_profiles (
     updated_at TIMESTAMPTZ DEFAULT now()
 );
 
-CREATE OR REPLACE FUNCTION public.check_tenant_id_trigger()
+CREATE OR REPLACE FUNCTION private.check_tenant_id_trigger()
 RETURNS TRIGGER AS $$
 BEGIN
     -- Check if the tenant_id of the row being modified (NEW.tenant_id)
@@ -28,4 +28,4 @@ DROP TRIGGER IF EXISTS user_profiles_tenant_check ON public.user_profiles;
 CREATE TRIGGER user_profiles_tenant_check
 BEFORE INSERT OR UPDATE ON public.user_profiles
 FOR EACH ROW
-EXECUTE FUNCTION check_tenant_id_trigger();
+EXECUTE FUNCTION private.check_tenant_id_trigger();
