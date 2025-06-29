@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS public.user_profiles;
-CREATE TABLE IF NOT EXISTS public.user_profiles (
+CREATE TABLE IF NOT EXISTS private.user_profiles (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     username TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS public.user_profiles (
     updated_at TIMESTAMPTZ DEFAULT now()
 );
 
-CREATE OR REPLACE FUNCTION public.check_tenant_id_trigger()
+CREATE OR REPLACE FUNCTION private.check_tenant_id_trigger()
 RETURNS TRIGGER AS $$
 BEGIN
     -- Check if the tenant_id of the row being modified (NEW.tenant_id)
@@ -24,9 +24,9 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-DROP TRIGGER IF EXISTS user_profiles_tenant_check ON public.user_profiles;
+DROP TRIGGER IF EXISTS user_profiles_tenant_check ON private.user_profiles;
 
 CREATE TRIGGER user_profiles_tenant_check
-BEFORE INSERT OR UPDATE ON public.user_profiles
+BEFORE INSERT OR UPDATE ON private.user_profiles
 FOR EACH ROW
-EXECUTE FUNCTION public.check_tenant_id_trigger();
+EXECUTE FUNCTION private.check_tenant_id_trigger();
