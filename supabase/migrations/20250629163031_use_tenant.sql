@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS public.user_profiles (
+CREATE TABLE IF NOT EXISTS private.user_profiles (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     username TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
@@ -23,9 +23,9 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-DROP TRIGGER IF EXISTS user_profiles_tenant_check ON public.user_profiles;
+DROP TRIGGER IF EXISTS user_profiles_tenant_check ON private.user_profiles;
 
-CREATE TRIGGER user_profiles_tenant_check
+CREATE TRIGGER private.user_profiles_tenant_check
 BEFORE INSERT OR UPDATE ON public.user_profiles
 FOR EACH ROW
 EXECUTE FUNCTION private.check_tenant_id_trigger();
