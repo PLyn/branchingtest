@@ -25,7 +25,7 @@ $$ LANGUAGE plpgsql;
 
 DROP TRIGGER IF EXISTS user_profiles_tenant_check ON public.user_profiles;
 
-CREATE TRIGGER public.user_profiles_tenant_check
+CREATE TRIGGER user_profiles_tenant_check
 BEFORE INSERT OR UPDATE ON public.user_profiles
 FOR EACH ROW
 EXECUTE FUNCTION check_tenant_id_trigger();
