@@ -14,6 +14,7 @@ project_id = "cantgglgtvktlmfkhxoq"
 host = "smtp.resend.com"
 port = 465
 user = "resend"
+
 pass = "fcsdfews123123123"
 admin_email = "preview@updates.at.test"
 sender_name = "preview"
