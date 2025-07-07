@@ -33,7 +33,7 @@ sender_name = "mainproject"
 host = "smtp.resend.com"
 port = 465
 user = "resend"
-pass = "fcsdfews123123123"
+pass = "fcsdfews1231233"
 admin_email = "testing@main.test.ai"
 sender_name = "testing"
 
