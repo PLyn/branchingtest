@@ -1,42 +1,33 @@
-# Defaults to the working directory name when running `supabase init`.
+# A string used to distinguish different Supabase projects on the same host. Defaults to the
+# working directory name when running `supabase init`.
 project_id = "branchingtest"
 
+[remotes.dev]
+project_id = "gayrhmlmrnsgspwnkonz"
+
+
+
 # The config specific to production
+
 [remotes.main]
-project_id = 'ulrcmldsytnhoxjjcwgk'
+project_id = 'ojmkgekqrsikhhesrnuw'
 
-# The config specific to the remote branch called "testing"
-[remotes.testing]
-project_id = "cantgglgtvktlmfkhxoq"
 
-# Applies to all preview branches that isn't main or testing
 [auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
 user = "resend"
+pass = "env(SUPABASE_AUTH_EXTERNAL_GITHUB_SECRET)"
+admin_email = "test@updates.at.test"
+sender_name = "test"
 
-pass = "fcsdfews123123123"
-admin_email = "preview@updates.at.test"
-sender_name = "preview"
-
-# Sets SMTP config for production branch main
 [remotes.main.auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
 user = "resend"
-
 pass = "asfgasdsdfdsfdsf423"
-admin_email = "mymainproject@main.test.ai"
-sender_name = "mainproject"
-
-# Sets SMTP config for remote branch testing
-[remotes.testing.auth.email.smtp]
-host = "smtp.resend.com"
-port = 465
-user = "resend"
-pass = "fcsdfews1231233"
-admin_email = "testing@main.test.ai"
-sender_name = "testing"
+admin_email = "bot@updates.test.ai"
+sender_name = "maintest"
 
 [api]
 enabled = true
