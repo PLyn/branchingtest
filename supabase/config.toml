@@ -16,7 +16,7 @@ port = 465
 user = "resend"
 
 pass = "fcsdfews123123123"
-admin_email = "preview@updates.at.test"
+admin_email = "preview@preview.at.test"
 sender_name = "preview"
 
 # Sets SMTP config for production branch main
