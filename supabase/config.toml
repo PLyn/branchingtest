@@ -13,7 +13,7 @@ project_id = "cantgglgtvktlmfkhxoq"
 [auth.email.smtp]
 host = "smtp.resend.com"
 port = 465
-user = "resend"
+user = "test"
 
 pass = "fcsdfews123123123"
 admin_email = "preview@preview.at.test"
